@@ -6,9 +6,29 @@
 	background: blue;
 }
 
-.navbar-brand {
-	font-size: 40px;
+body {
+	background: url('background.jpeg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box {
 	font-family: 'Indie Flower', cursive;
+	float: left;
+	padding-top: 35px;
+	padding-left: 100px;
+}
+
+.navbar-brand {
+	font-size: 50px;
+	font-family: 'Indie Flower', cursive;
+	color: #A80293;
+}
+
+.details {
+	border: solid 2px black;
 }
 
 .collapse navbar-collapse {
@@ -20,6 +40,13 @@
 	padding-right: 40px;
 	font-family: 'Dancing Script', cursive;
 	font-size: 20px;
+}
+
+.navbar {
+	background: white;
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
 }
 
 .link {
@@ -43,14 +70,14 @@
 }
 
 .carousel-caption {
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'Dancing Script', cursive;
 	font-size: 60px;
 	font-weight: 100;
 	text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
 	background-color: rgba(0, 0, 0, 0.5);
-	width: 100%;
+	width: 70%;
 	position: absolute;
-	left: 0;
+	padding-left: 30px;
 	}
 
 .carousel {
