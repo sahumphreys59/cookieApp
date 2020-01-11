@@ -1,13 +1,14 @@
 @import "bootstrap";
 @import "https://fonts.googleapis.com/css?family=Indie+Flower&display=swap";
 @import "https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower&display=swap";
+@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
 
 .background {
 	background: blue;
 }
 
 body {
-	background: url('background.jpeg') no-repeat center center fixed;
+	background: url('turqoise.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,21 +16,30 @@ body {
 }
 
 .box {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Montserrat', sans-serif;
 	float: left;
 	padding-top: 35px;
-	padding-left: 100px;
+	padding-left: 160px;
 }
 
 .navbar-brand {
-	font-size: 50px;
+	font-size: 70px;
 	font-family: 'Indie Flower', cursive;
 	color: #A80293;
 }
 
 .details {
-	border: solid 2px black;
+	font-family: 'Montserrat', sans-serif;
+	border: 2px; border-style:solid; 
+	border-color: black; 
+	padding: 10px; 
+	font-size: 23px;
+	background: white;
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
 }
+
 
 .collapse navbar-collapse {
 	text-align: center;
@@ -55,15 +65,16 @@ body {
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
 	display: block;
-	max-width: 100%;
-	height: auto;
+	width: 100%;
+	height: 400px;
 	line-height: 1;
 }
 
-.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 550px;
-  width: 100%;
+.carousel-item {
+	-webkit-backface-visibility: unset!important;
+    backface-visibility: unset!important;
 }
+
 
 .carousel-item-prev {
   display: block;
@@ -73,7 +84,7 @@ body {
 	font-family: 'Dancing Script', cursive;
 	font-size: 60px;
 	font-weight: 100;
-	text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+	text-shadow: rgba(0, 0, 0, 0.35) 2px 2px;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 70%;
 	position: absolute;
