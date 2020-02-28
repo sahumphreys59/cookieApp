@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
 	def shop
 	end	
+
+	def flavors
+	end	
 end
