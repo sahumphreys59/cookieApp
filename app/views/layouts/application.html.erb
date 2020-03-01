@@ -14,12 +14,12 @@
 
   
   
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded ">
 
 
-      <div align="center">  
-        <%= link_to image_tag('quinn2.png', style: 'height:240px; width: 250px;'), root_path, class: 'img-fluid, img-responsive' %>
-      </div> 
+      <div align="center">
+        <%= link_to image_tag('quinn2.png', style: 'height:220px; width: 220px; position: center;'), root_path, class: 'img-fluid, img-responsive' %>
+      </div>  
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,16 +35,13 @@
             <%= link_to 'Home', root_path, class: 'link'%>
           </li>
           <li class="nav-item">
-            <%= link_to 'Flavors', flavors_path, class: 'link'%>
+            <%= link_to 'Bakery', flavors_path, class: 'link'%>
           </li>
           <li class="nav-item">
-           <%= link_to 'Shop', shop_path, class: 'link' %>
+           <%= link_to 'Flowers', '#', class: 'link' %>
           </li>
           <li class="nav-item">
-            <%= link_to 'Contact', '#', class: 'link' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'About Us', '#', class: 'link' %>
+            <%= link_to 'Order Online', shop_path , class: 'link' %>
           </li>
         </ul>
       </div>
@@ -53,13 +50,27 @@
     <%= yield %>
 
   </div>
+
     <div id="footer">
       <div class="align">
         <div class="row">
+          <div class="col-12 col-sm-3 social">
+          <br />
+          <%= link_to '#' do %> 
+            <span class="fa fa-github-square fa-3x social-button"></span>
+          <% end %>
+          <%= link_to '#' do %>  
+            <span class="fa fa-facebook-square fa-3x social-button"></span>
+          <% end %>
+          <%= link_to '#' do %>
+            <span class="fa fa-instagram fa-3x social-button"></span> 
+          <% end %>  
+        </div>
 
 
-        <div class="col-12 col-sm">
+        </div>
       </div>
     </div>
+  </body>  
   </body>
 </html>
