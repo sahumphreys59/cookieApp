@@ -11,22 +11,16 @@
   </head>
 
   <body>
-    <div class="row" align="center">
-      <div class="col-4">
-        <div class="box">
-          <h2 style="border: 2px; border-style:solid; border-color:teal; padding: 10px; font-size: 23px;">Order Online</h2>
-        </div>
-      </div>
-      <div class="col-4">
-        <%= link_to 'Quinn Pie', root_path,  class: "navbar-brand"%>
-      </div>
-      <div class="col-4">
-        <%= link_to image_tag('quinn2.png', style: 'height:140px; width: 150px; margin-right: 150px;'), root_path %>
-      </div>    
-        
-    </div>
+
+  
   
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+
+      <div align="center">  
+        <%= link_to image_tag('quinn2.png', style: 'height:240px; width: 250px;'), root_path, class: 'img-fluid, img-responsive' %>
+      </div> 
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,7 +30,7 @@
      
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-md-0 nav-fill w-100">
+        <ul class="navbar-nav ml-auto mt-2 mt-md-0">
           <li class="nav-item">
             <%= link_to 'Home', root_path, class: 'link'%>
           </li>

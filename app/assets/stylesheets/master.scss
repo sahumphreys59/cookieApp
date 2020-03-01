@@ -19,7 +19,6 @@ body {
 
 .box {
 	font-family: 'Montserrat', ;
-	float: left;
 	padding-top: 35px;
 	padding-left: 160px;
 }
@@ -33,8 +32,10 @@ body {
 .details {
 	font-family: 'Montserrat', sans-serif;
 	border: 10px; border-style:solid; 
-	border-color: teal; 
-	padding: 10px; 
+	border-color: #3dada4; 
+	padding-left: 50px; 
+	padding-right:50px;
+	padding-top:20px;
 	font-size: 23px;
 	background: white;
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -59,10 +60,14 @@ body {
 }
 
 .navbar {
-	background: white;
+	background: image_url('spoons.jpg') no-repeat bottom fixed;
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .link {
@@ -91,7 +96,7 @@ body {
 	font-size: 60px;
 	font-weight: 100;
 	text-shadow: rgba(0, 0, 0, 0.35) 2px 2px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: transparent;
 	width: 70%;
 	position: absolute;
 	padding-left: 30px;
