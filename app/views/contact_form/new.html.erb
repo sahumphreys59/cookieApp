@@ -1,0 +1,19 @@
+<br/>
+<h1 align="center">ContactForm</h1>
+<br/>
+<div class="booyah-box col-5 offset-4" align="center">
+	<br/>
+
+  <%= simple_form_for @contact_form do |f| %>
+	  <%=	f.input :name %>
+	  <br/>
+	  <%=	f.input :email %>
+	  <br/>
+	  <%=	f.input :message, :as => :text, :input_html => {:rows => 5} %>
+	  <br/>
+	  <br/>
+  	<%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+  <% end %>	
+  	<br/>
+</div>  
+

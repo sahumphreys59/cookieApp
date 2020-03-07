@@ -18,7 +18,7 @@
 
 
       <div align="center">
-        <%= link_to image_tag('quinn2.png', style: 'height:220px; width: 220px; position: center;'), root_path, class: 'img-fluid, img-responsive' %>
+        <%= link_to image_tag('quinn2.png', style: 'height:180px; width: 180px; position: center;'), root_path, class: 'img-fluid, img-responsive offset-1' %>
       </div>  
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,9 @@
            <%= link_to 'Flowers', '#', class: 'link' %>
           </li>
           <li class="nav-item">
+            <%= link_to 'Gifts', '#', class: 'link' %>
+          </li>  
+          <li class="nav-item">
             <%= link_to 'Order Online', shop_path , class: 'link' %>
           </li>
         </ul>
@@ -54,7 +57,7 @@
     <div id="footer">
       <div class="align">
         <div class="row">
-          <div class="col-12 col-sm-3 social">
+          <div class="col-5 offset-1 social">
           <br />
           <%= link_to '#' do %> 
             <span class="fa fa-github-square fa-3x social-button"></span>
@@ -64,13 +67,18 @@
           <% end %>
           <%= link_to '#' do %>
             <span class="fa fa-instagram fa-3x social-button"></span> 
-          <% end %>  
+          <% end %>    
         </div>
 
 
+          <div class="col-5 offset-1" style="font-size: 23px;">
+            <%= link_to 'Contact Us', contact_form_new_path %>
+            <br/>
+            <%= link_to 'Order Online', '#' %>
+          </div>
         </div>
       </div>
     </div>
-  </body>  
+  
   </body>
 </html>
