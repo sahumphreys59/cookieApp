@@ -21,7 +21,7 @@
 }
 
 body {
-	background: #A0CDF4;
+	background: #68EFB3;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,6 +32,7 @@ body {
     padding: 0px;
     overflow-x: hidden; 
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
 
@@ -55,19 +56,13 @@ body {
 }
 
 .details {
-	font-family: 'Montserrat', sans-serif;
-	border: 5px; border-style:solid; 
-	border-color: #3dada4; 
+	font-family: 'Montserrat', sans-serif; 
 	padding-left: 50px; 
 	padding-right:50px;
 	padding-top:20px;
 	font-size: 23px;
-	background: teal;
-	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
   color:black;
-  border-radius: 25px;
+
 }
 
 .flavors {
@@ -99,8 +94,8 @@ body {
 }
 
 .link {
-	color: #B372C6;
-	font-size: 25px;
+	color: black;
+	font-size: 30px;
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
@@ -153,6 +148,11 @@ body {
 
 .mailing h1, p {
 	color: white;
+}
+
+.wall {
+	background: rgba(0, 0, 0, 0.45);
+	border-radius: 25px;
 }
 
 #footer {
